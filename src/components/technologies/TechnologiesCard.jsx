@@ -1,15 +1,17 @@
 import React from 'react'
+import TachnolodgiSideBarCard from './TachnolodgiSideBarCard'
 
 
 
 
 const TechnologiesCard = ({technologicard}) => {
 
-    
+
   return (
 
+    <div className='container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-6 items-start'>
 
-    <div className='container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-2'>
+        <div className='lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-6'>
       {
         technologicard.map((tech)=>{
             return <div className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col justify-between ">
@@ -65,6 +67,15 @@ const TechnologiesCard = ({technologicard}) => {
         })
       }
     </div>
+
+    <div className="lg:col-span-1">
+        <TachnolodgiSideBarCard/>
+    </div>
+
+
+    </div>
+
+
   )
 }
 
