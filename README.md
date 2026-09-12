@@ -54,9 +54,7 @@ State: Internal data managed within a component that can change based on user ac
 
 Example: In TachnolodgiSideBarCard, if selectedStack.length === 0, it shows "Your stack is empty." Otherwise, it displays the list of selected technologies and the "Remove All" button.
 
-7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
-Answer:
-
-Parent to Child: Data is passed down directly using props.
+### 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
+**Answer:** Parent to Child: Data is passed down directly using props.
 
 Child to Parent: The parent passes a callback function to the child as a prop. The child calls this function when an event occurs (like clicking a button) to send data back up to the parent.
