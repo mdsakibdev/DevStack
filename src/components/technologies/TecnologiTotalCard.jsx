@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import TachnolodgiSideBarCard from "./TachnolodgiSideBarCard";
 import TecnologiSingaleCard from "./TecnologiSingaleCard";
+import { Bounce, toast } from "react-toastify";
 
 const TechnologiesCard = ({ technologicard }) => {
   const [selectedStack, setSelectedStack] = useState([]);
@@ -12,6 +13,18 @@ const TechnologiesCard = ({ technologicard }) => {
     );
     if (!isAlreadyAdded) {
       setSelectedStack([...selectedStack, tech]);
+
+      toast.success(`${tech.name} added to your stack!`, {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce
+      })
     }
   };
 
