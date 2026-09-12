@@ -2,7 +2,7 @@ import React from "react";
 
 const TachnolodgiSideBarCard = ({ selectedStack, onRemove, onRemoveAll }) => {
   return (
-    <div className="sticky top-20 bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
+    <div className="sticky top-20 h-fit self-start bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
       <h2 className="text-xl font-bold text-[#0F172A] mb-1">Your Stack</h2>
       <p className="text-xs text-gray-400 mb-5">
         {selectedStack.length > 0

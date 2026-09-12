@@ -30,7 +30,7 @@ const TechnologiesCard = ({ technologicard }) => {
   };
 
   return (
-    <div className="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-6 items-start md:px-0 px-5 ">
+    <div className="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-6 items-start md:px-0 px-5">
       <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-6">
         {technologicard.map((tech, index) => {
           const isSelected = selectedStack.some(
@@ -48,7 +48,7 @@ const TechnologiesCard = ({ technologicard }) => {
         })}
       </div>
 
-      <div className="lg:col-span-1">
+      <div className="lg:col-span-1 h-full">
         <TachnolodgiSideBarCard
           selectedStack={selectedStack}
           onRemove={handleRemoveTech}
