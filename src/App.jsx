@@ -7,7 +7,7 @@ import Technologies from "./components/technologies/Technologies"
 import Footer from "./components/footer/Footer"
 
 
-const technologiesFatch = async ()=> {
+const technologiesFatch = async () => {
 const res = await fetch('/public/data.json')
 const data = await res.json()
 return data

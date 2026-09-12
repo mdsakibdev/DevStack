@@ -1,5 +1,5 @@
 import React, { use } from "react";
-import TechnologiesCard from "./TechnologiesCard";
+import TechnologiesCard from "./TecnologiTotalCard";
 
 const Technologies = ({ technologiesPromis }) => {
   const technologiCard = use(technologiesPromis);
