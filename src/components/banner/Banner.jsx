@@ -22,10 +22,10 @@ const Banner = () => {
       </p>
 
       <div className="flex flex-row items-center justify-center  gap-4  sm:w-auto">
-        <button className=" sm:w-auto bg-linear-to-r from-[#FF6B35] via-[#FF535A] to-[#EC4899] text-white font-medium px-4 py-3 md:px-6 md:py-3 rounded-xl shadow-sm hover:opacity-95 transition-opacity duration-200 cursor-pointer">
+        <button className=" sm:w-auto bg-linear-to-r from-[#FF6B35] via-[#FF535A] to-[#EC4899] text-white font-medium px-1.5 py-1.5  md:px-6 md:py-3 rounded-xl shadow-sm hover:opacity-95 transition-opacity duration-200 cursor-pointer">
           Explore Technologies
         </button>
-        <button className=" sm:w-auto border border-gray-300 bg-white text-gray-700 font-medium px-4 py-3 md:px-6 md:py-3 rounded-xl hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 cursor-pointer">
+        <button className=" sm:w-auto border border-gray-300 bg-white text-gray-700 font-medium px-1 py-1.5 md:px-6 md:py-3 rounded-xl hover:bg-gray-50 hover:border-gray-400 transition-all duration-200 cursor-pointer">
           Learn More
         </button>
       </div>

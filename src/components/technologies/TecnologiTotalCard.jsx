@@ -28,19 +28,45 @@ const TechnologiesCard = ({ technologicard }) => {
     }
   };
 
-  // Single Itme remove
-  const handleRemoveTech = (idOrName) => {
-    setSelectedStack(
-      selectedStack.filter(
-        (item) => (item.id || item.name) !== idOrName
-      )
-    );
-  };
+  // Singale item Remove
+const handleRemoveTech = (idOrName) => {
+  const itemToRemove = selectedStack.find(
+    (item) => (item.id || item.name) === idOrName
+  );
 
-  // All Item remove
-  const handleRemoveAll = () => {
-    setSelectedStack([]);
-  };
+  setSelectedStack(
+    selectedStack.filter((item) => (item.id || item.name) !== idOrName)
+  );
+
+  toast.warn(`${itemToRemove?.name || "Item"} removed from your stack!`, {
+    position: "bottom-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: false,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+    transition: Bounce,
+  });
+};
+
+// All Item Remove
+const handleRemoveAll = () => {
+  setSelectedStack([]);
+
+  toast.error("All technologies removed from your stack!", {
+    position: "bottom-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: false,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+    transition: Bounce,
+  });
+};
 
   return (
     <div className="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-6 items-start md:px-0 px-5">
