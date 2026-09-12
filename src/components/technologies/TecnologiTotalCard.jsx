@@ -5,7 +5,7 @@ import TecnologiSingaleCard from "./TecnologiSingaleCard";
 const TechnologiesCard = ({ technologicard }) => {
   const [selectedStack, setSelectedStack] = useState([]);
 
-  // সিলেক্ট করার হ্যান্ডলার
+  // Selected Item
   const handleSelectTech = (tech) => {
     const isAlreadyAdded = selectedStack.some(
       (item) => (item.id || item.name) === (tech.id || tech.name)
@@ -15,7 +15,7 @@ const TechnologiesCard = ({ technologicard }) => {
     }
   };
 
-  // একটি আইটেম সরানোর হ্যান্ডলার
+  // Single Itme remove
   const handleRemoveTech = (idOrName) => {
     setSelectedStack(
       selectedStack.filter(
@@ -24,7 +24,7 @@ const TechnologiesCard = ({ technologicard }) => {
     );
   };
 
-  // সব আইটেম সরানোর হ্যান্ডলার
+  // All Item remove
   const handleRemoveAll = () => {
     setSelectedStack([]);
   };

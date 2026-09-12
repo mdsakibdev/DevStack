@@ -8,7 +8,7 @@ import Footer from "./components/footer/Footer"
 
 
 const technologiesFatch = async () => {
-const res = await fetch('/public/data.json')
+const res = await fetch('/data.json')
 const data = await res.json()
 return data
 }
