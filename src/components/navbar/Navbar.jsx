@@ -9,7 +9,7 @@ function Navbar() {
 
         <nav className='flex justify-between items-center  px-2 py-3 md:py-5  '>
 
-          <buuton className='text-3xl md:text-4xl text-zinc-800 md:hidden'> <HiOutlineMenu /></buuton>
+          <button className='text-3xl md:text-4xl text-zinc-800 md:hidden'> <HiOutlineMenu /></button>
 
         <img className='w-auto h-8 md:h-full' src={logoImage} alt="Navbar Logo" />
 
